@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <h1 class="poppins-bold heading">Maze generator</h1>
+    <div class="content">
+      <canvas id="canvas" width="600" height="600"></canvas>
+    </div>
+    <div class="ui poppins-medium">
+      <label for="maze-size">Maze size (5-100):</label>
+      <input
+        type="number"
+        id="maze-size"
+        name="maze-size"
+        value="10"
+        min="10"
+        max="100"
+      />
+      <input type="checkbox" id="visualize" name="visualize" />
+      <label for="visualize">Visualize</label>
+      <button type="button poppins-semibold" class="btn" id="generate-button">
+        Generate
+      </button>
+    </div>
+  </body>
+</html>
